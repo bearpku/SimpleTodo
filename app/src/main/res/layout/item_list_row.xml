@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TableRow android:layout_width="fill_parent"
+        android:id="@+id/titleRow"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="24dp"
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="title"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:typeface="monospace"
+            android:height="40sp" />
+    </TableRow>
+
+    <TableRow android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/notes"
+            android:text="notes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="20sp" />
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:text="dueAt"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:id="@+id/dueAt"
+            android:height="20sp" />
+    </TableRow>
+</TableLayout>
